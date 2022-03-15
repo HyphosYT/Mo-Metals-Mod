@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "firstmod",
+  "version": "${version}",
+
+  "name": "My First Mod!",
+  "description": "My First Mod!",
+  "authors": [
+    "Hyphos"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/firstmod/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "hyphos.example.firstmod.FirstMod"
+    ]
+  },
+  "mixins": [
+    "firstmod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
