@@ -3,7 +3,6 @@ package hyphos.example.firstmod;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -17,11 +16,11 @@ import org.slf4j.LoggerFactory;
 
 public class FirstMod implements ModInitializer {
 	
-	public static final Block TITANIUM_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(5.0F, 6.0F).sounds(BlockSoundGroup.METAL));
+	public static final Block TITANIUM_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(4.0F, 5.0F).sounds(BlockSoundGroup.METAL));
 	
 	public static final Item TITANIUM = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
 
-	public static final Block TITANIUM_ORE = new TitaniumBlock(FabricBlockSettings.copy(Blocks.STONE));
+	public static final Block TITANIUM_ORE = new TitaniumOre(FabricBlockSettings.of(Material.STONE).strength(3, 3).sounds(BlockSoundGroup.STONE));
 
 	public static final Logger LOGGER = LoggerFactory.getLogger("firstmod");
 
