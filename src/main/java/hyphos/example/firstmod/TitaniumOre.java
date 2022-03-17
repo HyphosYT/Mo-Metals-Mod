@@ -18,11 +18,11 @@ public class TitaniumOre extends Block{
         
         //TODO Auto-generated constructor stub
     }
-    
+    //Code for experience when mined
     protected int getExperienceWhenMined(Random random){
         return MathHelper.nextInt(random, 2, 5);
     }
-
+    //Stops you from getting xp when mined with silk touch
     public void onStacksDropped(BlockState state, ServerWorld world, BlockPos pos, ItemStack stack){
         super.onStacksDropped(state, world, pos, stack);
         if (EnchantmentHelper.getLevel(Enchantments.SILK_TOUCH, stack) == 0) {

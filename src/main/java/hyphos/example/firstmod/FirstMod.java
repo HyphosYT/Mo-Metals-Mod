@@ -40,14 +40,14 @@ public class FirstMod implements ModInitializer {
 	public static final Block TITANIUM_ORE = new TitaniumOre(FabricBlockSettings.of(Material.STONE).strength(3, 3).sounds(BlockSoundGroup.STONE));
 
 	private static ConfiguredFeature<?, ?> TITANIUM_ORE_OVERWORLD = new ConfiguredFeature
-		(Feature.ORE, new OreFeatureConfig(OreConfiguredFeatures.STONE_ORE_REPLACEABLES, TITANIUM_ORE.getDefaultState(), 9));
+		(Feature.ORE, new OreFeatureConfig(OreConfiguredFeatures.STONE_ORE_REPLACEABLES, TITANIUM_ORE.getDefaultState(), 9)); //vein size
 
 	public static PlacedFeature TITANIUM_ORE_OVERWORLD_FEATURE = new PlacedFeature(
 		RegistryEntry.of(TITANIUM_ORE_OVERWORLD),
 		Arrays.asList(
-			CountPlacementModifier.of(20),
-			SquarePlacementModifier.of(),
-			HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
+			CountPlacementModifier.of(20), //number of veins per chunk
+			SquarePlacementModifier.of(), //spreading horizontally
+			HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64)) //height for generation
 		));
 
 	public static final Logger LOGGER = LoggerFactory.getLogger("firstmod");
@@ -66,7 +66,6 @@ public class FirstMod implements ModInitializer {
 	Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("firstmod", "titanium_ore_overworld"), TITANIUM_ORE_OVERWORLD);
 	Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier("firstmod", "titanium_ore_overworld"),
         TITANIUM_ORE_OVERWORLD_FEATURE);
-
 	BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, RegistryKey.of(Registry.PLACED_FEATURE_KEY, new Identifier("firstmod", "titanium_ore_overworld")));
 
 		LOGGER.info("Hello Fabric world!");
