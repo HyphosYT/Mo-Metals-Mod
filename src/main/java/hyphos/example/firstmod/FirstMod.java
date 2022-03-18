@@ -40,14 +40,14 @@ public class FirstMod implements ModInitializer {
 	public static final Block TITANIUM_ORE = new TitaniumOre(FabricBlockSettings.of(Material.STONE).strength(3, 3).sounds(BlockSoundGroup.STONE));
 
 	private static ConfiguredFeature<?, ?> TITANIUM_ORE_OVERWORLD = new ConfiguredFeature
-		(Feature.ORE, new OreFeatureConfig(OreConfiguredFeatures.STONE_ORE_REPLACEABLES, TITANIUM_ORE.getDefaultState(), 9)); //vein size
+		(Feature.ORE, new OreFeatureConfig(OreConfiguredFeatures.STONE_ORE_REPLACEABLES, TITANIUM_ORE.getDefaultState(), 5)); //vein size
 
 	public static PlacedFeature TITANIUM_ORE_OVERWORLD_FEATURE = new PlacedFeature(
 		RegistryEntry.of(TITANIUM_ORE_OVERWORLD),
 		Arrays.asList(
-			CountPlacementModifier.of(20), //number of veins per chunk
+			CountPlacementModifier.of(5), //number of veins per chunk
 			SquarePlacementModifier.of(), //spreading horizontally
-			HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64)) //height for generation
+			HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(20)) //height for generation
 		));
 
 	public static final Logger LOGGER = LoggerFactory.getLogger("firstmod");
