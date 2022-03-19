@@ -9,6 +9,9 @@ import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ShovelItem;
+import net.minecraft.item.SwordItem;
+import net.minecraft.item.ToolItem;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
@@ -31,6 +34,12 @@ import java.util.Arrays;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import hyphos.example.firstmod.class_files.TitaniumAxeItem;
+import hyphos.example.firstmod.class_files.TitaniumHoeItem;
+import hyphos.example.firstmod.class_files.TitaniumOre;
+import hyphos.example.firstmod.class_files.TitaniumPickaxeItem;
+import hyphos.example.firstmod.class_files.TitaniumToolMaterial;
+
 public class FirstMod implements ModInitializer {
 	
 	public static final Block TITANIUM_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(4.0F, 5.0F).sounds(BlockSoundGroup.METAL));
@@ -50,6 +59,16 @@ public class FirstMod implements ModInitializer {
 			HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(20)) //height for generation
 		));
 
+	public static ToolItem TITANIUM_SWORD = new SwordItem(TitaniumToolMaterial.INSTANCE, 3, 7F, new Item.Settings().group(ItemGroup.COMBAT));
+
+	public static ToolItem TITANIUM_SHOVEL = new ShovelItem(TitaniumToolMaterial.INSTANCE, 1.5F, 3F, new Item.Settings().group(ItemGroup.COMBAT));
+
+	public static ToolItem TITANIUM_PICKAXE = new TitaniumPickaxeItem(TitaniumToolMaterial.INSTANCE, 1, -2.8F, new Item.Settings().group(ItemGroup.TOOLS));
+
+	public static ToolItem TITANIUM_AXE = new TitaniumAxeItem(TitaniumToolMaterial.INSTANCE, 7, -3.2F, new Item.Settings().group(ItemGroup.TOOLS));
+
+	public static ToolItem TITANIUM_HOE = new TitaniumHoeItem(TitaniumToolMaterial.INSTANCE, 1, 3, new Item.Settings().group(ItemGroup.TOOLS));
+
 	public static final Logger LOGGER = LoggerFactory.getLogger("firstmod");
 
 	@Override
@@ -68,6 +87,12 @@ public class FirstMod implements ModInitializer {
         TITANIUM_ORE_OVERWORLD_FEATURE);
 	BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, RegistryKey.of(Registry.PLACED_FEATURE_KEY, new Identifier("firstmod", "titanium_ore_overworld")));
 
+	Registry.register(Registry.ITEM, new Identifier("firstmod", "titanium_sword"), TITANIUM_SWORD);
+	Registry.register(Registry.ITEM, new Identifier("firstmod", "titanium_shovel"), TITANIUM_SHOVEL);
+	Registry.register(Registry.ITEM, new Identifier("firstmod", "titanium_pickaxe"), TITANIUM_PICKAXE);
+	Registry.register(Registry.ITEM, new Identifier("firstmod", "titanium_axe"), TITANIUM_AXE);
+	Registry.register(Registry.ITEM, new Identifier("firstmod", "titanium_hoe"), TITANIUM_HOE);
+	
 		LOGGER.info("Hello Fabric world!");
 	}
 }

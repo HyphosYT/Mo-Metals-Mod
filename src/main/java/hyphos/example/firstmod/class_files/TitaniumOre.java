@@ -1,4 +1,4 @@
-package hyphos.example.firstmod;
+package hyphos.example.firstmod.class_files;
 
 import java.util.Random;
 
