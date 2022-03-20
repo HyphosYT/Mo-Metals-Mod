@@ -16,7 +16,7 @@ public class TitaniumOre extends Block{
     public TitaniumOre(Settings settings) {
         super(settings);
         
-        //TODO Auto-generated constructor stub
+        
     }
     //Code for experience when mined
     protected int getExperienceWhenMined(Random random){
