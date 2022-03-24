@@ -4,12 +4,12 @@
   "version": "${version}",
 
   "name": "Mo' Metals Mod",
-  "description": "A mod that adds many different metals to the game",
+  "description": "A mod that adds many different metals to the game!",
   "authors": [
     "Hyphos"
   ],
   "contact": {
-    "homepage": "https://www.youtube.com/channel/UCtVihtfklT8iuX61RrLUZiA",
+    "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/HyphosYT/Mo-Metals-Mod"
   },
 

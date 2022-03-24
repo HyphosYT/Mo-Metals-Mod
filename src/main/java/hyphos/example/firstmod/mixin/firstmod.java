@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(TitleScreen.class)
 public class firstmod {
-	@Inject(at = @At("HEAD"), method = "init()V")
+    @Inject(at = @At("HEAD"), method = "init()V")
 	private void init(CallbackInfo info) {
 		FirstMod.LOGGER.info("Fabric Mod 1.18.2 has Loaded!! :)");
 	}
