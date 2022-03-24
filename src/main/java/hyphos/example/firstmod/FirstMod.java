@@ -51,7 +51,7 @@ public class FirstMod implements ModInitializer {
 	private static final ConfiguredFeature<?, ?> TITANIUM_ORE_OVERWORLD = new ConfiguredFeature
 		(Feature.ORE, new OreFeatureConfig(OreConfiguredFeatures.STONE_ORE_REPLACEABLES, TITANIUM_ORE.getDefaultState(), 5)); //vein size
 
-	public static PlacedFeature TITANIUM_ORE_OVERWORLD_FEATURE = new PlacedFeature(
+	public static final PlacedFeature TITANIUM_ORE_OVERWORLD_FEATURE = new PlacedFeature(
 		RegistryEntry.of(TITANIUM_ORE_OVERWORLD),
 		Arrays.asList(
 			CountPlacementModifier.of(5), //number of veins per chunk
@@ -59,15 +59,15 @@ public class FirstMod implements ModInitializer {
 			HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(20)) //height for generation
 		));
 
-	public static ToolItem TITANIUM_SWORD = new SwordItem(TitaniumToolMaterial.INSTANCE, 5, -1.5F, new Item.Settings().group(ItemGroup.COMBAT));
+	public static final ToolItem TITANIUM_SWORD = new SwordItem(TitaniumToolMaterial.INSTANCE, 5, -1.5F, new Item.Settings().group(ItemGroup.COMBAT));
 
-	public static ToolItem TITANIUM_SHOVEL = new ShovelItem(TitaniumToolMaterial.INSTANCE, 3F, -2F, new Item.Settings().group(ItemGroup.TOOLS));
+	public static final ToolItem TITANIUM_SHOVEL = new ShovelItem(TitaniumToolMaterial.INSTANCE, 3F, -2F, new Item.Settings().group(ItemGroup.TOOLS));
 
-	public static ToolItem TITANIUM_PICKAXE = new TitaniumPickaxeItem(TitaniumToolMaterial.INSTANCE, 3, -1.8F, new Item.Settings().group(ItemGroup.TOOLS));
+	public static final ToolItem TITANIUM_PICKAXE = new TitaniumPickaxeItem(TitaniumToolMaterial.INSTANCE, 3, -1.8F, new Item.Settings().group(ItemGroup.TOOLS));
 
-	public static ToolItem TITANIUM_AXE = new TitaniumAxeItem(TitaniumToolMaterial.INSTANCE, 7, -2F, new Item.Settings().group(ItemGroup.TOOLS));
+	public static final ToolItem TITANIUM_AXE = new TitaniumAxeItem(TitaniumToolMaterial.INSTANCE, 7, -2F, new Item.Settings().group(ItemGroup.TOOLS));
 
-	public static ToolItem TITANIUM_HOE = new TitaniumHoeItem(TitaniumToolMaterial.INSTANCE, 0, -1F, new Item.Settings().group(ItemGroup.TOOLS));
+	public static final ToolItem TITANIUM_HOE = new TitaniumHoeItem(TitaniumToolMaterial.INSTANCE, 0, -1F, new Item.Settings().group(ItemGroup.TOOLS));
 
 	public static final Logger LOGGER = LoggerFactory.getLogger("firstmod");
 
