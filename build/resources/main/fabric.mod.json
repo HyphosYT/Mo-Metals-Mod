@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "id": "firstmod",
-  "version": "0.3.0",
+  "version": "0.3.2",
 
-  "name": "My First Mod!",
-  "description": "My First Mod!",
+  "name": "Mo' Metals Mod",
+  "description": "A mod that adds many different metals to the game!",
   "authors": [
     "Hyphos"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/HyphosYT/Mo-Metals-Mod"
   },
 
   "license": "MIT",
