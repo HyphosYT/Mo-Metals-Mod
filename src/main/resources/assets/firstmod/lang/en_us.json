@@ -1,15 +1,17 @@
 {
-    "item.firstmod.titanium_ore": "Titanium Ore",
-    "block.firstmod.titanium_ore": "Titanium Ore",
-
-    "item.firstmod.titanium": "Titanium",
-
-    "item.firstmod.titanium_block": "Titanium Block",
-    "block.firstmod.titanium_block": "Titanium Bock",
-    
-    "item.firstmod.titanium_sword": "Titanium Sword",
-    "item.firstmod.titanium_shovel": "Titanium Shovel",
-    "item.firstmod.titanium_axe": "Titanium Axe",
-    "item.firstmod.titanium_hoe": "Titanium Hoe",
-    "item.firstmod.titanium_pickaxe": "Titanium Pickaxe"
+  "block.firstmod.titanium_block": "Titanium Bock",
+  "block.firstmod.titanium_ore": "Titanium Ore",
+  "item.firstmod.titanium": "Titanium",
+  "item.firstmod.titanium_axe": "Titanium Axe",
+  "item.firstmod.titanium_block": "Titanium Block",
+  "item.firstmod.titanium_hoe": "Titanium Hoe",
+  "item.firstmod.titanium_material_boots": "Titanium Boots",
+  "item.firstmod.titanium_material_chestplate": "Titanium Chestplate",
+  "item.firstmod.titanium_material_helmet": "Titanium Helmet",
+  "item.firstmod.titanium_material_leggings": "Titanium Leggings",
+  "item.firstmod.titanium_ore": "Titanium Ore",
+  "item.firstmod.titanium_pickaxe": "Titanium Pickaxe",
+  "item.firstmod.titanium_shovel": "Titanium Shovel",
+  "item.firstmod.titanium_sword": "Titanium Sword",
+  "itemGroup.firstmod.mo_metals_mod": "Mo' Metals Mod"
 }
