@@ -5,6 +5,11 @@
     "item.firstmod.titanium": "Titanium",
 
     "item.firstmod.titanium_block": "Titanium Block",
-    "block.firstmod.titanium_block": "Titanium Bock"
+    "block.firstmod.titanium_block": "Titanium Bock",
     
+    "item.firstmod.titanium_sword": "Titanium Sword",
+    "item.firstmod.titanium_shovel": "Titanium Shovel",
+    "item.firstmod.titanium_axe": "Titanium Axe",
+    "item.firstmod.titanium_hoe": "Titanium Hoe",
+    "item.firstmod.titanium_pickaxe": "Titanium Pickaxe"
 }
