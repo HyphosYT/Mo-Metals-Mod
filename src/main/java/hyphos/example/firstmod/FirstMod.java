@@ -48,7 +48,7 @@ public class FirstMod implements ModInitializer {
 
 	public static final Block TITANIUM_ORE = new TitaniumOre(FabricBlockSettings.of(Material.STONE).strength(3, 3).sounds(BlockSoundGroup.STONE));
 
-	private static ConfiguredFeature<?, ?> TITANIUM_ORE_OVERWORLD = new ConfiguredFeature
+	private static final ConfiguredFeature<?, ?> TITANIUM_ORE_OVERWORLD = new ConfiguredFeature
 		(Feature.ORE, new OreFeatureConfig(OreConfiguredFeatures.STONE_ORE_REPLACEABLES, TITANIUM_ORE.getDefaultState(), 5)); //vein size
 
 	public static PlacedFeature TITANIUM_ORE_OVERWORLD_FEATURE = new PlacedFeature(
