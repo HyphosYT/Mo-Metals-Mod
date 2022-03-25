@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "firstmod:titanium"
+    }
+  },
+  "result": {
+    "item": "firstmod:titanium_material_helmet",
+    "count": 1
+  }
+}
