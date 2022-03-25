@@ -1,5 +1,8 @@
-[10:30:39] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.18.2 with Fabric Loader 0.13.3
-[10:30:40] [main/INFO] (FabricLoader) Loading 48 mods:
+[14:38:37] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.18.2 with Fabric Loader 0.13.3
+[14:38:39] [main/INFO] (FabricLoader) Loading 57 mods:
+	- architectury 4.1.34
+	- cloth-basic-math 0.6.0 via cloth-config
+	- cloth-config 6.2.57
 	- fabric 0.48.0+1.18.2
 	- fabric-api-base 0.4.4+d7c144a860
 	- fabric-api-lookup-api-v1 1.5.7+d7c144a860
@@ -47,14 +50,23 @@
 	- fabricloader 0.13.3
 	- firstmod 0.4.6
 	- java 17
+	- lithium 0.7.9
 	- minecraft 1.18.2
-[10:30:42] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/C:/Users/Ryan/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.11.2+mixin.0.8.5/f4ae569d559b5e3244b67321945261d83ff7ad8e/sponge-mixin-0.11.2+mixin.0.8.5.jar Service=Knot/Fabric Env=CLIENT
-[10:30:43] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[10:30:43] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_16
-[10:30:43] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
-[10:31:16] [main/WARN] (FabricLoader/Mixin) @Inject(@At("INVOKE")) Shift.BY=3 on fabric-lifecycle-events-v1.mixins.json:client.WorldChunkMixin::handler$zig000$onLoadBlockEntity exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.
-[10:31:27] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[10:31:29] [Render thread/ERROR] (Minecraft) Failed to verify authentication
+	- modmenu 3.1.0
+	- org_joml_joml 1.10.2 via sodium
+	- phosphor 0.8.1
+	- roughlyenoughitems 8.0.442
+	- sodium 0.4.1+build.15
+[14:39:03] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/C:/Users/Ryan/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.11.2+mixin.0.8.5/f4ae569d559b5e3244b67321945261d83ff7ad8e/sponge-mixin-0.11.2+mixin.0.8.5.jar Service=Knot/Fabric Env=CLIENT
+[14:39:04] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[14:39:05] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_16
+[14:39:05] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[14:39:06] [main/INFO] (Lithium) Loaded configuration file for Lithium: 100 options available, 0 override(s) found
+[14:39:06] [main/INFO] (Sodium) Loaded configuration file for Sodium: 29 options available, 0 override(s) found
+[14:39:12] [main/INFO] (Sodium) Trying to switch memory allocators to work around memory leaks present with Jemalloc 5.0.0 through 5.2.0 on Windows
+[14:39:15] [main/WARN] (FabricLoader/Mixin) @Inject(@At("INVOKE")) Shift.BY=3 on fabric-lifecycle-events-v1.mixins.json:client.WorldChunkMixin::handler$zon000$onLoadBlockEntity exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.
+[14:39:41] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[14:39:43] [Render thread/ERROR] (Minecraft) Failed to verify authentication
 com.mojang.authlib.exceptions.InvalidCredentialsException: Status: 401
 	at com.mojang.authlib.exceptions.MinecraftClientHttpException.toAuthenticationException(MinecraftClientHttpException.java:56) ~[authlib-3.3.39.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:132) ~[authlib-3.3.39.jar:?]
@@ -76,233 +88,284 @@ Caused by: com.mojang.authlib.exceptions.MinecraftClientHttpException: Status: 4
 	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:48) ~[authlib-3.3.39.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:113) ~[authlib-3.3.39.jar:?]
 	... 13 more
-[10:31:29] [Render thread/INFO] (Minecraft) Setting user: Player217
-[10:31:29] [Render thread/INFO] (firstmod) Hello Fabric world!
-[10:31:30] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[10:31:32] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.2.2 build 10
-[10:31:41] [Render thread/INFO] (Minecraft) Narrator library for x64 successfully loaded
-[10:31:41] [Render thread/INFO] (Minecraft) Reloading ResourceManager: Default, Fabric Mods (Fabric BlockRenderLayer Registration (v1), Fabric Resource Loader (v0), Fabric Transfer API (v1), Fabric Crash Report Info (v1), Fabric Game Test API (v1), Fabric Loot Tables (v1), Fabric Rendering Data Attachment (v1), Fabric Containers (v0), Fabric Models (v0), Fabric Data Generation API (v1), Fabric Rendering Fluids (v1), Fabric Entity Events (v1), Fabric Renderer Registries (v1), Fabric Textures (v0), Fabric Dimensions API (v1), Fabric API Base, Fabric Screen Handler API (v1), Fabric Rendering (v0), Fabric Events Interaction (v0), Fabric Key Bindings (v0), Fabric Game Rule API (v1), Fabric Content Registries (v0), Fabric Screen API (v1), Fabric Loader, Fabric API, Fabric Item API (v1), Fabric Resource Conditions API (v1), Fabric Networking (v0), Fabric Renderer API (v1), Fabric Item Groups (v0), Fabric Rendering (v1), Fabric Renderer - Indigo, Fabric Networking API (v1), Fabric Commands (v0), Fabric Mining Level API (v1), Fabric Command API (v1), Fabric Registry Sync (v0), Fabric Key Binding API (v1), Fabric Events Lifecycle (v0), Mo' Metals Mod, Fabric Biome API (v1), Fabric API Lookup API (v1), Fabric Particles (v1), Fabric Transitive Access Wideners (v1), Fabric Lifecycle Events (v1), Fabric Object Builder API (v1))
-[10:31:42] [Render thread/INFO] (firstmod) Fabric Mod 1.18.2 has Loaded!! :)
-[10:31:43] [Render thread/INFO] (firstmod) Fabric Mod 1.18.2 has Loaded!! :)
-[10:31:43] [Render thread/INFO] (firstmod) Fabric Mod 1.18.2 has Loaded!! :)
-[10:31:44] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: Invalid session id
-[10:32:08] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on Headset (High Definition Audio Device)
-[10:32:08] [Render thread/INFO] (Minecraft) Sound engine started
-[10:32:09] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
-[10:32:09] [Render thread/INFO] (Minecraft) Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
-[10:32:09] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[10:32:09] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[10:32:09] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[10:32:09] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[10:32:09] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[10:32:15] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[10:32:15] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[10:32:15] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[10:32:16] [Render thread/INFO] (firstmod) Fabric Mod 1.18.2 has Loaded!! :)
-[10:32:31] [Render thread/WARN] (Minecraft) Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[10:32:31] [Render thread/WARN] (Minecraft) Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[10:32:31] [Render thread/WARN] (Minecraft) Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[10:32:31] [Render thread/WARN] (Minecraft) Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[10:32:31] [Render thread/WARN] (Minecraft) Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[10:32:34] [Render thread/INFO] (Minecraft) Loaded 7 recipes
-[10:32:35] [Render thread/INFO] (Minecraft) Loaded 1141 advancements
-[10:32:38] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[10:32:39] [Render thread/INFO] (BiomeModificationImpl) Applied 1 biome modifications to 1 of 61 new biomes in 25.54 ms
-[10:32:39] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.18.2
-[10:32:39] [Server thread/INFO] (Minecraft) Generating keypair
-[10:32:40] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
-[10:32:44] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[10:32:44] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[10:32:44] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[10:32:45] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[10:32:45] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[10:32:45] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[10:32:45] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[10:32:45] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[10:32:46] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[10:32:46] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[10:32:47] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[10:32:47] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[10:32:48] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[10:32:48] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[10:32:49] [Render thread/INFO] (Minecraft) Preparing spawn area: 5%
-[10:32:49] [Render thread/INFO] (Minecraft) Preparing spawn area: 5%
-[10:32:50] [Render thread/INFO] (Minecraft) Preparing spawn area: 40%
-[10:32:50] [Render thread/INFO] (Minecraft) Preparing spawn area: 40%
-[10:32:51] [Render thread/INFO] (Minecraft) Preparing spawn area: 62%
-[10:32:51] [Render thread/INFO] (Minecraft) Preparing spawn area: 62%
-[10:32:59] [Render thread/INFO] (Minecraft) Time elapsed: 17796 ms
-[10:33:00] [Server thread/INFO] (Minecraft) Changing view distance to 2, from 10
-[10:33:00] [Server thread/INFO] (Minecraft) Changing simulation distance to 5, from 0
-[10:33:12] [Server thread/INFO] (Minecraft) Player217[local:E:0e28a154] logged in with entity id 4 at (4.700407142702379, -5.0, 3.448823260311615)
-[10:33:12] [Server thread/INFO] (Minecraft) Player217 joined the game
-[10:33:12] [Server thread/INFO] (Minecraft) Player217 has made the advancement [Cover Me with Diamonds]
-[10:33:13] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 3349ms or 66 ticks behind
-[10:33:14] [Render thread/INFO] (Minecraft) [CHAT] Player217 has made the advancement [Cover Me with Diamonds]
-[10:33:14] [Render thread/INFO] (Minecraft) Loaded 23 advancements
-[10:36:04] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[10:36:04] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[10:36:04] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[10:36:04] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[10:42:35] [Server thread/INFO] (Minecraft) [Player217: Summoned new Dragon Fireball]
-[10:42:35] [Render thread/INFO] (Minecraft) [CHAT] Summoned new Dragon Fireball
-[10:43:07] [Server thread/INFO] (Minecraft) [Player217: Killed Dragon Fireball]
-[10:43:07] [Render thread/INFO] (Minecraft) [CHAT] Killed Dragon Fireball
-[10:43:34] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[10:43:34] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[10:43:34] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[10:43:34] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[10:45:14] [Server thread/INFO] (Minecraft) [Player217: Set own game mode to Survival Mode]
-[10:45:14] [Render thread/INFO] (Minecraft) [CHAT] Set own game mode to Survival Mode
-[10:45:16] [Server thread/INFO] (Minecraft) [Player217: Set own game mode to Creative Mode]
-[10:45:16] [Render thread/INFO] (Minecraft) [CHAT] Set own game mode to Creative Mode
-[10:45:17] [Render thread/INFO] (Minecraft) [CHAT] [Debug]: Reloaded resource packs
-[10:45:17] [Render thread/INFO] (Minecraft) Reloading ResourceManager: Default, Fabric Mods (Fabric BlockRenderLayer Registration (v1), Fabric Resource Loader (v0), Fabric Transfer API (v1), Fabric Crash Report Info (v1), Fabric Game Test API (v1), Fabric Loot Tables (v1), Fabric Rendering Data Attachment (v1), Fabric Containers (v0), Fabric Models (v0), Fabric Data Generation API (v1), Fabric Rendering Fluids (v1), Fabric Entity Events (v1), Fabric Renderer Registries (v1), Fabric Textures (v0), Fabric Dimensions API (v1), Fabric API Base, Fabric Screen Handler API (v1), Fabric Rendering (v0), Fabric Events Interaction (v0), Fabric Key Bindings (v0), Fabric Game Rule API (v1), Fabric Content Registries (v0), Fabric Screen API (v1), Fabric Loader, Fabric API, Fabric Item API (v1), Fabric Resource Conditions API (v1), Fabric Networking (v0), Fabric Renderer API (v1), Fabric Item Groups (v0), Fabric Rendering (v1), Fabric Renderer - Indigo, Fabric Networking API (v1), Fabric Commands (v0), Fabric Mining Level API (v1), Fabric Command API (v1), Fabric Registry Sync (v0), Fabric Key Binding API (v1), Fabric Events Lifecycle (v0), Mo' Metals Mod, Fabric Biome API (v1), Fabric API Lookup API (v1), Fabric Particles (v1), Fabric Transitive Access Wideners (v1), Fabric Lifecycle Events (v1), Fabric Object Builder API (v1))
-[10:45:17] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[10:45:17] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[10:45:17] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[10:45:17] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[10:45:30] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on Headset (High Definition Audio Device)
-[10:45:30] [Render thread/INFO] (Minecraft) Sound engine started
-[10:45:30] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
-[10:45:30] [Render thread/INFO] (Minecraft) Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
-[10:45:30] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[10:45:30] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[10:45:30] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[10:45:30] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[10:45:30] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[10:45:32] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[10:45:32] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[10:45:32] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[11:00:13] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[11:00:13] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[11:00:13] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[11:00:13] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[11:00:14] [Server thread/INFO] (Minecraft) Player217 lost connection: Disconnected
-[11:00:14] [Server thread/INFO] (Minecraft) Player217 left the game
-[11:00:15] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
-[11:00:15] [Server thread/INFO] (Minecraft) Stopping server
-[11:00:15] [Server thread/INFO] (Minecraft) Saving players
-[11:00:15] [Server thread/INFO] (Minecraft) Saving worlds
-[11:00:18] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[11:00:20] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[11:00:20] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[11:00:20] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (New World (1)): All chunks are saved
-[11:00:20] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[11:00:20] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[11:00:20] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
-[11:00:20] [Render thread/INFO] (firstmod) Fabric Mod 1.18.2 has Loaded!! :)
-[11:00:21] [Render thread/INFO] (Minecraft) Stopping!
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
-[11:00:21] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:39:43] [Render thread/INFO] (Minecraft) Setting user: Player39
+[14:39:43] [Render thread/INFO] (firstmod) Hello Fabric world!
+[14:39:45] [Render thread/INFO] (REI) Config loaded.
+[14:39:45] [Render thread/INFO] (REI) Registered plugin provider DefaultPlugin [roughlyenoughitems] for REIPlugin
+[14:39:45] [Render thread/INFO] (REI) Registered plugin provider DefaultRuntimePlugin [roughlyenoughitems] for REIPlugin
+[14:39:45] [Render thread/INFO] (REI) Registered plugin provider DefaultClientPlugin [roughlyenoughitems] for REIPlugin
+[14:39:45] [Render thread/INFO] (REI) Registered plugin provider DefaultClientRuntimePlugin [roughlyenoughitems] for REIPlugin
+[14:39:45] [Render thread/INFO] (REI) Registered plugin provider DefaultPlugin [roughlyenoughitems] for REIServerPlugin
+[14:39:45] [Render thread/INFO] (REI) Registered plugin provider DefaultRuntimePlugin [roughlyenoughitems] for REIServerPlugin
+[14:39:45] [Render thread/INFO] (REI) Registered plugin provider FabricFluidAPISupportPlugin for REIServerPlugin
+[14:39:45] [Render thread/INFO] (REI) Registered plugin provider FabricFluidAPISupportPlugin for REIPlugin
+[14:39:46] [Render thread/INFO] (Indigo) [Indigo] Different rendering plugin detected; not applying Indigo.
+[14:39:46] [Render thread/INFO] (REI) Registered plugin provider DefaultClientPlugin [roughlyenoughitems] for REIClientPlugin
+[14:39:46] [Render thread/INFO] (REI) Registered plugin provider DefaultClientRuntimePlugin [roughlyenoughitems] for REIClientPlugin
+[14:39:48] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.2.2 build 10
+[14:39:57] [Render thread/INFO] (Minecraft) Narrator library for x64 successfully loaded
+[14:39:58] [Render thread/INFO] (Minecraft) Reloading ResourceManager: Default, Fabric Mods (Fabric Events Lifecycle (v0), Fabric Dimensions API (v1), Fabric Loader, Phosphor, Fabric Networking (v0), Fabric Resource Conditions API (v1), Fabric Particles (v1), Fabric Transitive Access Wideners (v1), Fabric Key Bindings (v0), Fabric Screen API (v1), Fabric Rendering (v1), Fabric Rendering Data Attachment (v1), Fabric Renderer - Indigo, Fabric Screen Handler API (v1), Fabric Mining Level API (v1), Fabric BlockRenderLayer Registration (v1), Fabric Containers (v0), Fabric Item Groups (v0), Fabric Transfer API (v1), Fabric Rendering (v0), Fabric API, Fabric Events Interaction (v0), Fabric Data Generation API (v1), Fabric Command API (v1), Mod Menu, Fabric Entity Events (v1), Mo' Metals Mod, Fabric Biome API (v1), Fabric Rendering Fluids (v1), Fabric Models (v0), Lithium, Fabric Renderer Registries (v1), Fabric Game Test API (v1), Fabric Textures (v0), Roughly Enough Items, Cloth Config v6, Fabric Lifecycle Events (v1), Fabric Commands (v0), Fabric Game Rule API (v1), Fabric Loot Tables (v1), Fabric Renderer API (v1), Fabric Resource Loader (v0), Fabric Crash Report Info (v1), Fabric Content Registries (v0), Fabric Key Binding API (v1), Fabric API Base, Sodium, Fabric API Lookup API (v1), Fabric Registry Sync (v0), Fabric Object Builder API (v1), Fabric Networking API (v1), Fabric Item API (v1))
+[14:39:58] [Render thread/INFO] (firstmod) Fabric Mod 1.18.2 has Loaded!! :)
+[14:40:00] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: Invalid session id
+[14:40:00] [Render thread/INFO] (firstmod) Fabric Mod 1.18.2 has Loaded!! :)
+[14:40:00] [Render thread/INFO] (firstmod) Fabric Mod 1.18.2 has Loaded!! :)
+[14:40:29] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on Headset (High Definition Audio Device)
+[14:40:29] [Render thread/INFO] (Minecraft) Sound engine started
+[14:40:30] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[14:40:30] [Render thread/INFO] (Minecraft) Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[14:40:30] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[14:40:30] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[14:40:30] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[14:40:30] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[14:40:30] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[14:40:36] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[14:40:36] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[14:40:36] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[14:40:36] [Render thread/INFO] (firstmod) Fabric Mod 1.18.2 has Loaded!! :)
+[14:40:44] [Render thread/WARN] (Mod Menu) Warning! Mod cloth-basic-math has a broken icon, loading default icon
+[14:40:52] [Render thread/INFO] (firstmod) Fabric Mod 1.18.2 has Loaded!! :)
+[14:40:56] [Render thread/INFO] (firstmod) Fabric Mod 1.18.2 has Loaded!! :)
+[14:40:58] [Render thread/WARN] (Mod Menu) Warning! Mod cloth-basic-math has a broken icon, loading default icon
+[14:41:01] [Render thread/INFO] (firstmod) Fabric Mod 1.18.2 has Loaded!! :)
+[14:41:09] [Render thread/WARN] (Minecraft) Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[14:41:09] [Render thread/WARN] (Minecraft) Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[14:41:09] [Render thread/WARN] (Minecraft) Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[14:41:09] [Render thread/WARN] (Minecraft) Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[14:41:09] [Render thread/WARN] (Minecraft) Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[14:41:11] [Render thread/INFO] (Minecraft) Loaded 7 recipes
+[14:41:12] [Render thread/INFO] (Minecraft) Loaded 1141 advancements
+[14:41:15] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[14:41:16] [Render thread/INFO] (BiomeModificationImpl) Applied 1 biome modifications to 1 of 61 new biomes in 68.99 ms
+[14:41:16] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.18.2
+[14:41:16] [Server thread/INFO] (Minecraft) Generating keypair
+[14:41:18] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[14:41:22] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[14:41:22] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[14:41:23] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[14:41:23] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[14:41:23] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[14:41:23] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[14:41:23] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[14:41:23] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[14:41:23] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[14:41:24] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[14:41:25] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[14:41:25] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[14:41:26] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[14:41:26] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[14:41:26] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[14:41:27] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[14:41:29] [Render thread/INFO] (Minecraft) Preparing spawn area: 1%
+[14:41:29] [Render thread/INFO] (Minecraft) Preparing spawn area: 1%
+[14:41:30] [Render thread/INFO] (Minecraft) Preparing spawn area: 1%
+[14:41:30] [Render thread/INFO] (Minecraft) Preparing spawn area: 1%
+[14:41:30] [Render thread/INFO] (Minecraft) Preparing spawn area: 1%
+[14:41:30] [Render thread/INFO] (Minecraft) Preparing spawn area: 22%
+[14:41:31] [Render thread/INFO] (Minecraft) Preparing spawn area: 87%
+[14:41:32] [Render thread/INFO] (Minecraft) Time elapsed: 13077 ms
+[14:41:33] [Server thread/INFO] (Minecraft) Changing view distance to 2, from 10
+[14:41:33] [Server thread/INFO] (Minecraft) Changing simulation distance to 5, from 0
+[14:41:38] [Server thread/INFO] (Minecraft) Player39[local:E:15b89243] logged in with entity id 1 at (11.199083614029176, -6.0, 12.375040943291111)
+[14:41:38] [Server thread/INFO] (Minecraft) Player39 joined the game
+[14:41:38] [Server thread/INFO] (Minecraft) Player39 has made the advancement [Cover Me with Diamonds]
+[14:41:39] [REI-ReloadPlugins/INFO] (REI) Reloading Plugin Manager [REIPlugin] stage [START], registered 5 plugins: DefaultRuntimePlugin [roughlyenoughitems], DefaultClientRuntimePlugin [roughlyenoughitems], FabricFluidAPISupportPlugin, DefaultPlugin [roughlyenoughitems], DefaultClientPlugin [roughlyenoughitems]
+[14:41:39] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 2295ms or 45 ticks behind
+[14:41:39] [REI-ReloadPlugins/INFO] (REI) Reloaded Plugin Manager [REIPlugin] with 2 entry types, 5 item comparators, 0 fluid comparators and 2 fluid support providers in 259ms.
+[14:41:39] [REI-ReloadPlugins/INFO] (REI) Reloading Plugin Manager [REIClientPlugin] stage [START], registered 2 plugins: DefaultClientRuntimePlugin [roughlyenoughitems], DefaultClientPlugin [roughlyenoughitems]
+[14:41:40] [Render thread/INFO] (ChunkBuilder) Started 1 worker threads
+[14:41:41] [Render thread/WARN] (REI) Suppressing Reload Plugins of stage START
+[14:41:42] [Render thread/INFO] (Minecraft) [CHAT] Player39 has made the advancement [Cover Me with Diamonds]
+[14:41:42] [Render thread/INFO] (Minecraft) Loaded 23 advancements
+[14:41:42] [REI-ReloadPlugins/INFO] (REI) Reloaded Plugin Manager [REIClientPlugin] with 1383 entries, 0 displays, 0 display visibility predicates, 0 categories (), 4 exclusion zones and 3 overlay deciders in 2948ms.
+[14:41:42] [REI-ReloadPlugins/INFO] (REI) Reloading Plugin Manager [REIServerPlugin] stage [START], registered 3 plugins: DefaultRuntimePlugin [roughlyenoughitems], FabricFluidAPISupportPlugin, DefaultPlugin [roughlyenoughitems]
+[14:41:42] [REI-ReloadPlugins/INFO] (REI) Reloaded Plugin Manager [REIServerPlugin] with 0 menu infos in 20ms.
+[14:41:42] [REI-ReloadPlugins/INFO] (REI) Reloading Plugin Manager [REIPlugin] stage [END], registered 5 plugins: DefaultRuntimePlugin [roughlyenoughitems], DefaultClientRuntimePlugin [roughlyenoughitems], FabricFluidAPISupportPlugin, DefaultPlugin [roughlyenoughitems], DefaultClientPlugin [roughlyenoughitems]
+[14:41:42] [REI-ReloadPlugins/INFO] (REI) Reloaded Plugin Manager [REIPlugin] with 2 entry types, 5 item comparators, 0 fluid comparators and 2 fluid support providers in 252ms.
+[14:41:42] [REI-ReloadPlugins/INFO] (REI) Reloading Plugin Manager [REIClientPlugin] stage [END], registered 2 plugins: DefaultClientRuntimePlugin [roughlyenoughitems], DefaultClientPlugin [roughlyenoughitems]
+[14:41:43] [Render thread/INFO] (REI) Refreshing cached entry list texture...
+[14:41:43] [Render thread/INFO] (REI) Refreshing cached entry list texture...
+[14:41:43] [REI-ReloadPlugins/INFO] (REI) Reloaded Plugin Manager [REIClientPlugin] with 1383 entries, 1608 displays, 1 display visibility predicates, 21 categories (Crafting, Smelting, Smoking, Blasting, Campfire, Stone Cutting, Fuel, Brewing, Composting, Stripping, Smithing, Anvil, Beacon Base, Beacon Payment, Tilling, Pathing, Waxing, Wax Scraping, Oxidizing, Oxidation Scraping, Information), 4 exclusion zones and 3 overlay deciders in 598ms.
+[14:41:43] [REI-ReloadPlugins/INFO] (REI) Reloading Plugin Manager [REIServerPlugin] stage [END], registered 3 plugins: DefaultRuntimePlugin [roughlyenoughitems], FabricFluidAPISupportPlugin, DefaultPlugin [roughlyenoughitems]
+[14:41:43] [REI-ReloadPlugins/INFO] (REI) Reloaded Plugin Manager [REIServerPlugin] with 4 menu infos in 57ms.
+[14:42:08] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[14:42:08] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[14:42:08] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[14:42:08] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[14:43:13] [Render thread/INFO] (ChunkBuilder) Stopping worker threads
+[14:43:13] [Render thread/INFO] (ChunkBuilder) Started 1 worker threads
+[14:43:13] [Render thread/INFO] (Minecraft) Reloading ResourceManager: Default, Fabric Mods (Fabric Events Lifecycle (v0), Fabric Dimensions API (v1), Fabric Loader, Phosphor, Fabric Networking (v0), Fabric Resource Conditions API (v1), Fabric Particles (v1), Fabric Transitive Access Wideners (v1), Fabric Key Bindings (v0), Fabric Screen API (v1), Fabric Rendering (v1), Fabric Rendering Data Attachment (v1), Fabric Renderer - Indigo, Fabric Screen Handler API (v1), Fabric Mining Level API (v1), Fabric BlockRenderLayer Registration (v1), Fabric Containers (v0), Fabric Item Groups (v0), Fabric Transfer API (v1), Fabric Rendering (v0), Fabric API, Fabric Events Interaction (v0), Fabric Data Generation API (v1), Fabric Command API (v1), Mod Menu, Fabric Entity Events (v1), Mo' Metals Mod, Fabric Biome API (v1), Fabric Rendering Fluids (v1), Fabric Models (v0), Lithium, Fabric Renderer Registries (v1), Fabric Game Test API (v1), Fabric Textures (v0), Roughly Enough Items, Cloth Config v6, Fabric Lifecycle Events (v1), Fabric Commands (v0), Fabric Game Rule API (v1), Fabric Loot Tables (v1), Fabric Renderer API (v1), Fabric Resource Loader (v0), Fabric Crash Report Info (v1), Fabric Content Registries (v0), Fabric Key Binding API (v1), Fabric API Base, Sodium, Fabric API Lookup API (v1), Fabric Registry Sync (v0), Fabric Object Builder API (v1), Fabric Networking API (v1), Fabric Item API (v1))
+[14:43:13] [Render thread/INFO] (Sodium) Flushed changes to Sodium configuration
+[14:43:13] [Render thread/INFO] (Sodium) Flushed changes to Minecraft configuration
+[14:43:32] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on Headset (High Definition Audio Device)
+[14:43:32] [Render thread/INFO] (Minecraft) Sound engine started
+[14:43:33] [Render thread/INFO] (Minecraft) Created: 1024x1024x1 minecraft:textures/atlas/blocks.png-atlas
+[14:43:33] [Render thread/INFO] (Minecraft) Created: 256x128x1 minecraft:textures/atlas/signs.png-atlas
+[14:43:33] [Render thread/INFO] (Minecraft) Created: 1024x512x1 minecraft:textures/atlas/banner_patterns.png-atlas
+[14:43:33] [Render thread/INFO] (Minecraft) Created: 1024x512x1 minecraft:textures/atlas/shield_patterns.png-atlas
+[14:43:33] [Render thread/INFO] (Minecraft) Created: 256x256x1 minecraft:textures/atlas/chest.png-atlas
+[14:43:33] [Render thread/INFO] (Minecraft) Created: 512x256x1 minecraft:textures/atlas/beds.png-atlas
+[14:43:33] [Render thread/INFO] (Minecraft) Created: 512x256x1 minecraft:textures/atlas/shulker_boxes.png-atlas
+[14:43:35] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[14:43:35] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[14:43:35] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[14:43:35] [Render thread/INFO] (REI) Refreshing cached entry list texture...
+[14:43:35] [Render thread/INFO] (ChunkBuilder) Stopping worker threads
+[14:43:35] [Render thread/INFO] (ChunkBuilder) Started 1 worker threads
+[14:44:40] [Server thread/INFO] (Minecraft) [Player39: Gave 1 [Command Block] to Player39]
+[14:44:40] [Render thread/INFO] (Minecraft) [CHAT] Gave 1 [Command Block] to Player39
+[14:44:42] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[14:44:42] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[14:44:42] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[14:44:42] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[14:47:31] [Render thread/INFO] (Minecraft) [CHAT] Command set: /execute if entity @a[nbt={Inventory:[{id:"minecraft:tinted_glass"}]}]
+[14:47:33] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[14:47:33] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[14:47:33] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[14:47:33] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[14:47:36] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[14:47:36] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[14:47:36] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[14:47:36] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[14:47:57] [Render thread/INFO] (Minecraft) [CHAT] Command set: /execute if entity @a[nbt={Inventory:[{id:"minecraft:tinted_glass"}]}] run effect give @a minecraft:speed 2 3
+[14:48:15] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[14:48:15] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[14:48:15] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[14:48:15] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[14:51:32] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[14:51:32] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[14:51:32] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[14:51:32] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[14:51:32] [Server thread/INFO] (Minecraft) Player39 lost connection: Disconnected
+[14:51:32] [Server thread/INFO] (Minecraft) Player39 left the game
+[14:51:32] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[14:51:32] [Server thread/INFO] (Minecraft) Stopping server
+[14:51:32] [Server thread/INFO] (Minecraft) Saving players
+[14:51:32] [Server thread/INFO] (Minecraft) Saving worlds
+[14:51:33] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[14:51:36] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[14:51:36] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[14:51:36] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (New World (1)): All chunks are saved
+[14:51:36] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[14:51:36] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[14:51:36] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[14:51:36] [Render thread/INFO] (ChunkBuilder) Stopping worker threads
+[14:51:36] [Render thread/INFO] (firstmod) Fabric Mod 1.18.2 has Loaded!! :)
+[14:51:37] [Render thread/INFO] (Minecraft) Stopping!
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'
+[14:51:37] [Render thread/INFO] (Minecraft) OpenGL debug message: id=1281, source=API, type=ERROR, severity=HIGH, message='GL error GL_INVALID_VALUE'

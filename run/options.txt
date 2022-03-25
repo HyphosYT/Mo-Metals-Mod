@@ -26,10 +26,10 @@ fovEffectScale:1.0
 gamma:1.0
 renderDistance:2
 simulationDistance:5
-entityDistanceScaling:1.0
+entityDistanceScaling:0.5
 guiScale:2
 particles:2
-maxFps:260
+maxFps:80
 difficulty:2
 graphicsMode:0
 ao:0
@@ -57,7 +57,7 @@ chatDelay:0.0
 chatHeightUnfocused:0.44366195797920227
 chatScale:1.0
 chatWidth:1.0
-mipmapLevels:4
+mipmapLevels:1
 useNativeTransport:true
 mainHand:right
 attackIndicator:1
@@ -91,7 +91,7 @@ key_key.pickItem:key.mouse.middle
 key_key.command:key.keyboard.slash
 key_key.socialInteractions:key.keyboard.p
 key_key.screenshot:key.keyboard.f2
-key_key.togglePerspective:key.keyboard.f5
+key_key.togglePerspective:key.keyboard.r
 key_key.smoothCamera:key.keyboard.unknown
 key_key.fullscreen:key.keyboard.f11
 key_key.spectatorOutlines:key.keyboard.unknown
